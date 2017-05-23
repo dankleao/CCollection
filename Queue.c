@@ -69,7 +69,7 @@ PUBLIC int Qsearch(Queue* q, generic objAddr )
     register Node* p = q->pFirst->next;
     register int i;
     for ( i = 0; i < q->size ; ++i, p = p->next )
-    if( p->info == objAddr ) goto Find;
+        if( p->info == objAddr ) goto Find;
 
     NotFind:
         return -1;
